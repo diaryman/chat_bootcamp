@@ -6,7 +6,7 @@ services:
     container_name: oac_chatbot
     restart: always # ให้รันอัตโนมัติถ้า server restart
     ports:
-      - "8501:8501" # Port ภายนอก:Port ภายใน (เข้าเว็บผ่าน http://IP:8501)
+      - "8509:8501" # Port ภายนอก:Port ภายใน (เข้าเว็บผ่าน http://IP:8509)
     volumes:
       - ./chatbot.db:/app/chatbot.db # Map Database ออกมาข้างนอก ข้อมูลจะได้ไม่หาย
       - ./sponsors.png:/app/sponsors.png # Map รูปภาพออกมาด้วย เผื่อแก้รูปโดยไม่ต้องแก้ Image
